@@ -13,6 +13,7 @@ public class CarController : MonoBehaviour, IBlastable
 
     void Start()
     {
+        Application.targetFrameRate = 30;
         mainCamera = Camera.main;
         targetDirection = transform.forward;    // Start with initial forward direction
     }
